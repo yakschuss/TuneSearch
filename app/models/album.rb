@@ -1,4 +1,5 @@
 class Album < ActiveRecord::Base
   has_many :songs
-  belongs_to :artist
+
+  scope :by_title, -> (param) { where("album_title LIKE ?", "%#{param}%")}
 end
