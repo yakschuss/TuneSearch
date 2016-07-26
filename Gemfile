@@ -34,6 +34,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 #seed data
 gem 'faker'
+#add pry
+gem 'pry'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
