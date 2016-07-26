@@ -37,6 +37,9 @@ gem 'faker'
 #add pry
 gem 'pry'
 
+#postgres
+gem 'pg'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
