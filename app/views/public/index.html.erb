@@ -23,21 +23,4 @@
     </div>
   <% end %>
 </div>
-<div class="container lower-container">
-  <ul class="data-list text-center">
-    <% Song.first(100).each do |song| %>
-      <li class="row music-data text-center">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 song-title">
-          <span class="meta-data">Song:</span> <%= song.song_title %>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 album-title">
-          <span class="meta-data">Album:</span> <%= song.album.album_title %> 
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 artist-name">
-          <span class="meta-data">Artist:</span> <%= song.artist.artist_name %> 
-          <!--  n + 1 queries, not final ; just testing data UI -->
-        </div>
-      </li>
-    <% end %>
-  </ul>
-</div>
+<div id="results-target" class="container lower-container"></div>
