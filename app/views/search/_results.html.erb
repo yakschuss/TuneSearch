@@ -1,0 +1,26 @@
+<div class="row">
+  <ul>
+    <li class="column-list">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 column-headers"><p class="meta-data">Song</p></div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 column-headers"><p class="meta-data">Album</p></div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 column-headers"><p class="meta-data">Artist</p></div>
+    </li>
+  </ul>
+</div>
+
+<ul class="data-list text-center">
+<% @songs.each do |song| %>
+  <li class="row music-data text-center">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 song-title">
+      <%= song.song_title %>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 album-title">
+      <%= song.album.album_title %> 
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 artist-name">
+      <%= song.artist.artist_name %> 
+    </div>
+  </li>
+ <% end %>
+</ul>
+
