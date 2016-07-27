@@ -4,6 +4,7 @@ Steps to run locally:
 
 1. Clone Repo
 2. Ensure PostGres is installed
-3. `rake db:create` `rake db:seed`
-4. `rails s`
-5. Enjoy!
+3. run `bundle install`
+4. `rake db:create` `rake db:migrate` `rake db:seed`
+5. `rails s`
+6. Enjoy!
