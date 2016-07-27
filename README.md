@@ -16,3 +16,6 @@ data in the db, hitting search with empty parameters will return a full list.
 You can then make calls while on that page.
 
 
+Note2: Queries are currently case-sensitive. 
+Case Insensitive queries are on the Todo list.
+
